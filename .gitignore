@@ -1,0 +1,16 @@
+
+# Visual Studio temporary files
+.vs/
+.vscode/
+
+# Build output
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+
+# Compiled files
+*.dll
+*.exe
