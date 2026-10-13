@@ -83,7 +83,7 @@ class Program
         }
 
         Console.WriteLine();
-        Console.WriteLine("Printing Matrix With 1-10 numsbers:");
+        Console.WriteLine("Printing ");
 
         int i = 0;
         for (int r = 0; r < rows; r++)
