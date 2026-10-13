@@ -1,26 +1,35 @@
 ﻿using System;
-using System.Numerics;
 
 class Program
 {
     static void Main(string[] args)
     {
-        BigInteger a = 0;
-        BigInteger b = 1;
-        Console.Write("Enter the number of terms for Fibonacci series: ");
-        if (!BigInteger.TryParse(Console.ReadLine(), out BigInteger n) || n <= 0)
-        {
-            Console.WriteLine("Please enter a positive integer.");
-            return;
-        }
+        int a = 0;
+        int b = 1;
 
-        // Print exactly 'n' terms: F0 .. F(n-1)
-        for (int i = 0; i < n; i++)
+        int n = 5;
+
+        Console.WriteLine("Fibonacci series in For loop:");
+        for (int j = 0; j < n; j++)
         {
             Console.WriteLine("Fibonacci series: " + a);
-            BigInteger c = a + b;
+            int c = a + b;
             a = b;
             b = c;
         }
+
+        int i = 0;
+        Console.WriteLine("Enter A No");
+        int num = Convert.ToInt32(Console.ReadLine());
+        int sum = 0;
+        while (num>0)
+        {
+            int temp = num % 10;
+            sum = sum +temp;
+            num = num/10;
+        }
+        Console.WriteLine("Sum of digits: " + sum);
+
+
     }
 }
