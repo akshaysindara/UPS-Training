@@ -43,8 +43,8 @@ class Program1
 {
     public void Main2()
     {
-        Console.WriteLine("\n\nAnother Class\n\n");
-        Program a1 = new Program();
+        Console.WriteLine("\n\nAnother Class");
+        AccessModifier a1 = new AccessModifier();
         a1.Test1();
         //a1.Test2();
         //a1.Test3();
@@ -53,12 +53,12 @@ class Program1
     }
 }
 
-class Program : AccessModifier
+public class Program2 : AccessModifier
 {
     public static void Main()
     {
         Console.WriteLine("Inherited Class");
-        Program a1 = new Program();
+        Program2 a1 = new Program2();
         a1.Test1();
         //a1.Test2();
         a1.Test3();

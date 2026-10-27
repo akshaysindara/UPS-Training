@@ -1,4 +1,5 @@
-﻿class Program : AccessModifier
+﻿
+class Program :  Program2
 {
     public static void Main()
     {
