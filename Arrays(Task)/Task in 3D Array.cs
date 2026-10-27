@@ -9,6 +9,7 @@ class Program
                         { { 5, 6 }, { 7, 8 } }
                 };
         Console.Write("The Odd Elements in the 3D Array are: ");
+
         for (int i = 0; i < arr.GetLength(0); i++)
         {
             for (int j = 0; j < arr.GetLength(1); j++)
@@ -22,9 +23,11 @@ class Program
                 }
             }
         }
-        
+
         Console.WriteLine();    
+
         Console.Write("The Even Elements in the 3D Array are: ");
+
         for (int i = 0; i < arr.GetLength(0); i++)
         {
             for (int j = 0; j < arr.GetLength(1); j++)
