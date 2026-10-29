@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Transactions;
 
 
 //Nested Class 
@@ -54,7 +55,15 @@ class Generic<T>
 
 // Record Class
 
-record Loyola(int a, string b);
+public record class Loyola(int a, string b) 
+{
+    public string dept = "General";
+
+    public void show()
+    {
+        Console.WriteLine("Record Class With Data -- Name = " + b + " Age = " + a + "Dept = " + dept);
+    }
+}
 
 
 
@@ -69,8 +78,11 @@ class Program
         d.show();
         Generic<int> g = new Generic<int>(4);
         g.show();
-        Loyola a = new Loyola(5, "Akshay");
-        Console.Write("Record Class With Data -- ");
-        Console.WriteLine("Name: " + a.b + " & Age: " + a.a);
+        Loyola a = new Loyola(5, "Akshay")
+        {
+            dept = "CSE"
+        };
+        a.show();
+        Console.WriteLine(a);
     }
 }
