@@ -60,13 +60,12 @@ public class Program2 : AccessModifier
         Console.WriteLine("Inherited Class");
         Program2 a1 = new Program2();
         a1.Test1();
-        //a1.Test2();
+        //a1.test2();
         a1.Test3();
         a1.Test4();
         a1.Test5();
 
         Program1 a2 = new Program1();
-        a2.Main2();
 
         AccessModifier a3 = new AccessModifier();
         a3.Main1();
