@@ -25,13 +25,17 @@ class MultiThreading
         MultiThreading obj = new MultiThreading();
         Thread t1=new Thread(obj.Test1);
         Thread t2 = new Thread(obj.Test2);
-        t1.Start();
+        //t1.Start();
         Console.WriteLine("T1 Started");
-        t1.Join();
-        t2.Start();
+        //t1.Join();
+        //t2.Start();
         Console.WriteLine("T2 Started");
         //t1.Join();
-        t2.Join();
+        //t2.Join();
+        t1.Priority = ThreadPriority.Highest;
+        t2.Priority = ThreadPriority.Lowest;
+        t1.Start();
+        t2.Start();
         Console.WriteLine("Main Method Completed");
     }
 }
