@@ -43,7 +43,7 @@ class Program
                 string details = $"{regno}\t|\t{model}\t|\t{Price}";
                 sw2.WriteLine(details);
                 Console.WriteLine("Do Want To Continue?(Y/N)");
-                ans = Console.ReadLine();
+                ans = Console.ReadLine().ToLower();
             }
             sw2.Close();
         }
