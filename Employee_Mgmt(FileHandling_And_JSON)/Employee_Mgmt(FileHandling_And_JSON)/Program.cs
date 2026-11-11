@@ -18,7 +18,6 @@ class Program
         string txtPath = "Employees.txt";
         string jsonPath = "Employees.json";
 
-        // Load existing employee data from JSON
         List<Employee> employees = new List<Employee>();
 
         if (File.Exists(jsonPath))
